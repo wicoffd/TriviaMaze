@@ -4,14 +4,13 @@ import View.Main;
 
 import java.util.Random;
 
-public class QuestionEncounter extends Main {
+public class QuestionEncounter extends SQLFillTable {
     Random random = new Random();
     private int difficulty = 50; //TODO implement difficulty
-    public String[] Question(){
-        String[] question = new String[2];// TODO implement more efficient
-        question[0] = "What is the color of night?";
-        question[1] = "sanguine";
-        return question;
+    public String[] Question(int i){
+
+        String[] array = SQLFillTable.questionsList.get(i).toString().split(", ");
+        return array;
     }
     public boolean shouldQuestionBeAsked() {
         int temp = random.nextInt(100);
@@ -26,12 +25,13 @@ public class QuestionEncounter extends Main {
     }
 
     public boolean isPlayerAnswerCorrect() {
-        String[] temp = Question();
+        int r = random.nextInt(6);
+        String[] temp = Question(r);
         String q = temp[0];
         String a = temp[1];
         System.out.println(q);
         Main.sound.PlaySound(Main.sound.strangeOccurence);
-        String userAnswer = scan.nextLine();
+        String userAnswer = Main.scan.nextLine();
         if(userAnswer.equals(a)) {
             return true;
         }else{

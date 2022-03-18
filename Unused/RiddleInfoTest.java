@@ -1,11 +1,8 @@
-package Testing;
+package Unused;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
-import Model.RiddleInfo;
-
 
 
 public class RiddleInfoTest {

@@ -1,5 +1,6 @@
 package View;
 
+import Controller.GetPlayerSurrounding;
 import Model.*;
 
 import java.util.Scanner;
@@ -16,6 +17,7 @@ public class Main {
         int playerPos = 1;
         /** Get map data from file*/
         getPlayerSurrounding.loadMap(fileName);
+        SQLFillTable.setUp(); // Get questions database
         System.out.println(mapInfo.getInfoPrompt());
         // View.Main loop
         while(running) {

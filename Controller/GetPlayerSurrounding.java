@@ -1,4 +1,6 @@
-package Model;
+package Controller;
+import Model.LiveInfo;
+import Model.QuestionEncounter;
 import View.Main;
 
 import java.io.File;

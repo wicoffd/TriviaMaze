@@ -1,21 +1,8 @@
-package View;
+package Unused;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.font.FontRenderContext;
-import java.awt.font.GlyphVector;
-import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
-import java.awt.image.BufferedImageOp;
-import java.awt.image.ImageObserver;
-import java.awt.image.RenderedImage;
-import java.awt.image.renderable.RenderableImage;
-import java.io.OptionalDataException;
-import java.nio.channels.spi.AbstractInterruptibleChannel;
-import java.text.AttributedCharacterIterator;
-import java.util.Map;
 
 public class Display extends JFrame{
     /**
@@ -111,17 +98,6 @@ public class Display extends JFrame{
         /** Interprets the users input into the text box and sends 
          * the information to the right place*/
     }
-
-    /*@Override
-    public void actionPerformed(ActionEvent e) {
-        // action listeners will be written in model not view.
-        repaint();
-        *//*if(running) {
-            // check if player is moving
-
-        }*//*
-    }*/
-
     public static void main(String[] args) {
         Display display = new Display();
         ///display.
@@ -180,36 +156,6 @@ public class Display extends JFrame{
         displayFrame.setJMenuBar(menuBar);
     }
 
-    /*@Override
-    public void paint(Graphics g) {
-        Color color;
-        for (int y = 0; y < maze.length; y++) {
-            for (int x = 0; x < maze[0].length; x++) {
-                switch (maze[y][x]) {
-
-                    case 0:
-                        color = Color.BLACK;
-                        break;
-                    case 1:
-                        color = Color.LIGHT_GRAY;
-                        break;
-                    case 2:
-                        color = Color.YELLOW;
-                        break;
-                    default:
-                        color = Color.magenta;
-                        // do not break
-                }
-
-                g.setColor(color);
-                g.setColor(Color.LIGHT_GRAY);
-                g.drawRect(gameUnits * y, gameUnits * x, gameUnits, gameUnits);
-                g.fillRect(gameUnits * y, gameUnits * x, gameUnits, gameUnits);
-
-
-            }
-        }
-    }*/
 
 
 }

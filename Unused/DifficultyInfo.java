@@ -2,7 +2,7 @@
  * TCSS 360 - Sphinx Riddle Maze
  */
 
-package Model;
+package Unused;
 
 /**
  * An interface for dificulty info.

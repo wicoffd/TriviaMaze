@@ -1,12 +1,9 @@
-package Testing;
+package Unused;
 
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
-import Model.UserInfo;
-
 
 
 public class UserInfoTest {
