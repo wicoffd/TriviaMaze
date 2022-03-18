@@ -27,8 +27,8 @@ public class QuestionEncounter extends SQLFillTable {
     public boolean isPlayerAnswerCorrect() {
         int r = random.nextInt(6);
         String[] temp = Question(r);
-        String q = temp[0];
-        String a = temp[1];
+        String q = temp[1];
+        String a = temp[3];
         System.out.println(q);
         Main.sound.PlaySound(Main.sound.strangeOccurence);
         String userAnswer = Main.scan.nextLine();
