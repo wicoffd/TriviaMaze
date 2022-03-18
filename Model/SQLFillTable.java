@@ -9,15 +9,16 @@ import java.sql.Statement;
 
 public class SQLFillTable {
     private static void createTable(Connection conn) throws SQLException {
+        String dropTable = "IF EXISTS questions DROP TABLE questions;";
         String createTableSql = "" +
-                "CREATE TABLE questions "+
-                "( " +
+                "CREATE TABLE IF NOT EXISTS questions ("+
                 "answer varchar(255), " +
                 "question varchar(255) " +
-                "); "+
-                "";
+                "); ";
         Statement statement = conn.createStatement();
+        statement.execute(dropTable);
         statement.execute(createTableSql);
+        //System.out.println("Input ");
     }
     private static void newShortAnswer(SQLiteDataSource ds, String question, String answer ) {
         String query = "INSERT INTO questions ( TYPE, QUESTION, ANSWER ) VALUES ( 'Short Answer', '" +
