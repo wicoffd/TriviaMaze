@@ -27,7 +27,7 @@ public class Main {
             }
             input.delete(0,input.length());
             System.out.print("User input: ");
-            input.append(scan.next());
+            input.append(scan.nextLine());
             if(playerPos == getPlayerSurrounding.winPosition){ running = false;}
             switch (input.toString().toLowerCase()) {
 
@@ -64,6 +64,16 @@ public class Main {
                     System.out.println("Run coward! You flee the maze never to return.");
                     sound.PlaySound(sound.runAway);
                     running = false;
+                    break;
+                case "cheats":
+                    System.out.println(mapInfo.getCheatPrompt());
+                    break;
+                case "do the time warp":
+                    playerPos = (getPlayerSurrounding.getMap().length -3);
+                    break;
+                case "no more questions please":
+                    getPlayerSurrounding.questions.setDifficulty(3+05); // the random number cannot be higher than 100.
+                    break;
                 default:
                     break;
 

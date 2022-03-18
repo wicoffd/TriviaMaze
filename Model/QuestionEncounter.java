@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class QuestionEncounter extends Main {
     Random random = new Random();
-    int difficulty = 50; //TODO implement difficulty
+    private int difficulty = 50; //TODO implement difficulty
     public String[] Question(){
         String[] question = new String[2];// TODO implement more efficient
         question[0] = "What is the color of night?";
@@ -16,11 +16,11 @@ public class QuestionEncounter extends Main {
     public boolean shouldQuestionBeAsked() {
         int temp = random.nextInt(100);
         if(temp > difficulty){
-            System.out.println("ask question");
+            //System.out.println("ask question");
             return true;
         }
         else{
-            System.out.println("no question");
+            //System.out.println("no question");
             return false;
         }
     }
@@ -36,6 +36,13 @@ public class QuestionEncounter extends Main {
             return true;
         }else{
             return false;
+        }
+    }
+    public void setDifficulty(int percent) {
+        if(percent > 0) {
+            difficulty = percent;
+        }else {
+            System.out.println("Bad difficulty");
         }
     }
 }

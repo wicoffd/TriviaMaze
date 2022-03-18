@@ -5,6 +5,11 @@ import java.awt.event.KeyEvent;
 
 /** This will control how the sprite moves. This will also ensure that we dont go out of bounds or do illegal stuff. */
 public class Control {
+    /**
+     * A control method for taking player inputs
+     *
+     * @author Derek Wicoff
+     * @version Winter 2022 */
     private class MyKeyAdapter extends KeyAdapter {
         public void myKeyPressed(KeyEvent e) {
             switch (e.getKeyCode()) {

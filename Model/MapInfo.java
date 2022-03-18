@@ -8,4 +8,8 @@ public class MapInfo {
     public String getMenuPrompt() {
         return("Use (s)ave to save the game and (l)oad to load a game \nType (exit) to quit");
     }
+
+    public String getCheatPrompt() {
+        return("--Cheats--\nNo more questions please = No questions will be asked.\nDo the time warp = Teleports you to within one move of the exit. ");
+    }
 }

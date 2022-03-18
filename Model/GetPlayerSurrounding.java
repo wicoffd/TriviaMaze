@@ -13,7 +13,7 @@ public class GetPlayerSurrounding extends Main { // TODO write unit tests
     int height= 0;
     char[] map;
     public int winPosition = 0;
-    QuestionEncounter questions = new QuestionEncounter();
+    public QuestionEncounter questions = new QuestionEncounter();
     public LiveInfo lives = new LiveInfo(staringLives);
     public int movePlayer(char direction, int playerPos) {
        if(map[playerPos]== '3') {System.out.println("Congraturations you are winner!");

@@ -18,7 +18,11 @@ import java.text.AttributedCharacterIterator;
 import java.util.Map;
 
 public class Display extends JFrame{
-
+    /**
+     * A display method to with colors and graphics
+     *
+     * @author Derek Wicoff
+     * @version Winter 2022 */
     // action listeners should go in the model package.
     private final int width = 1900;
     private final int height = 900;
