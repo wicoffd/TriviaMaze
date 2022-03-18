@@ -5,22 +5,21 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 class QuestionEncounterTest {
-    QuestionEncounter question = new QuestionEncounter();
+
     @Test
     public void shouldQuestionBeAsked() {
+        final QuestionEncounter question = new QuestionEncounter();
         question.setDifficulty(300);
         for (int i = 0; i < 30; i++) {
                 assertFalse(question.shouldQuestionBeAsked());
             }
-        }
     }
-
     @Test
     public void setDifficulty() {
-
+        final QuestionEncounter question = new QuestionEncounter();
         question.setDifficulty(50);
-        assertEquals(question.getDifficulty(), "50");
+        assertEquals("Difficulty should be 50",50, question.getDifficulty());
         question.setDifficulty(300);
-        assertEquals(question.getDifficulty(),"300");
+        assertEquals("Difficulty should be 300",300,question.getDifficulty());
     }
 }
