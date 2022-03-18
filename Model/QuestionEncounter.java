@@ -31,7 +31,7 @@ public class QuestionEncounter extends Main {
         String a = temp[1];
         System.out.println(q);
         Main.sound.PlaySound(Main.sound.strangeOccurence);
-        String userAnswer = scan.next();
+        String userAnswer = scan.nextLine();
         if(userAnswer.equals(a)) {
             return true;
         }else{
@@ -44,5 +44,8 @@ public class QuestionEncounter extends Main {
         }else {
             System.out.println("Bad difficulty");
         }
+    }
+    public int getDifficulty() {
+        return difficulty;
     }
 }
