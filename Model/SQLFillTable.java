@@ -18,8 +18,8 @@ public class SQLFillTable {
         newShortAnswer(dataSource, "What is the color of night? 1 word.", "sanguine");
         newTrueFalse(dataSource, "Is Blizzard a trustworthy company?", "false");
         newShortAnswer(dataSource, "Who sings, This is America?", "childish gambino");
-        newShortAnswer(dataSource, "What song contains the lyric: Never going to say goodbye, never going to tell a lie. 4 words", "never gonna give you up");
-        newShortAnswer(dataSource, "What tree has pink petals that bloom in spring/near march? 2 words.", "american cherry blossom");
+        newShortAnswer(dataSource, "What song contains the lyric: Never going to say goodbye, never going to tell a lie. 5 words", "never gonna give you up");
+        newShortAnswer(dataSource, "What tree has pink petals that bloom in spring/near march? 3 words.", "american cherry blossom");
         newShortAnswer(dataSource, "How does America make its money? 1 word.", "war");
         ArrayList<Question> questions = createQuestionList(dataSource);
         setQuestionsList(questions);
