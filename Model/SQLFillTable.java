@@ -15,7 +15,7 @@ public class SQLFillTable {
         SQLiteDataSource dataSource = getDataSource("jdbc:sqlite:D:\\Documents\\My Games\\Trivia\\src\\db\\triviaQuestions.db");
         populateTable(dataSource);
 
-        newShortAnswer(dataSource, "What is the color of night? 1 word.", "sanguine");
+        
         newTrueFalse(dataSource, "Is Blizzard a trustworthy company?", "false");
         newShortAnswer(dataSource, "Who sings, This is America?", "childish gambino");
         newShortAnswer(dataSource, "What song contains the lyric: Never going to say goodbye, never going to tell a lie. 5 words", "never gonna give you up");
